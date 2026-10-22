@@ -7,7 +7,7 @@ print("\nEjercicio 1: Imprimir mensajes")
 print("Escribe un programa que imprima tu nombre y tu ciudad en líneas separadas.")
 
 ### Completa aquí
-print("Jordi\n Barcelona")
+print("Jordi\nBarcelona")
 
 print("--------------")
 
@@ -20,6 +20,11 @@ d = True
 e = None
 
 ### Completa aquí
+print(type(a))
+print(type(b))
+print(type(c))
+print(type(d))
+print(type(e))
 
 print("--------------")
 
@@ -28,7 +33,9 @@ print("Convierte la cadena \"12345\" a un entero y luego a un float.")
 print("Convierte el float 3.99 a un entero. ¿Qué ocurre?")
 
 ### Completa aquí
-
+print(int(12345))
+print(int(3.99))
+#El 3.99 es torna un 3 ya que s'extreuen els seus decimals
 print("--------------")
 
 print("\nEjercicio 4: Variables")
@@ -40,6 +47,10 @@ print("Usa f-strings para imprimir una presentación.")
 #age = 38
 
 ### Completa aquí
+nom = "Jordi"
+edat = 19
+altura = 1.72
+print(f"Hola! Me llamo {nom} y tengo {edat} años, mido {altura} metros")
 
 print("--------------")
 
