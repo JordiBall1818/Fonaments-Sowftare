@@ -20,4 +20,4 @@ print(f"Els segons que tardaría en transmetre 1GB de dades serían {velocitat/8
 # Demana també el preu del material.
 # Mostra el cost total de la instal·lació.
 hores, preu_hora, preu_material = map(float, input("Introdueix el nombre d'hores de feina, el preu per hora d'una instal·lació de xarxa i el del material<: ").split(", "))
-print(f"El cost total és: {hores*preu_hora+preu_material}.")
+print(f"El cost total és: {hores*preu_hora+preu_material}")

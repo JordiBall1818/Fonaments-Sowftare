@@ -5,16 +5,42 @@
 # Exercici 1: Determinar el més gran de dos nombres
 # Demana a l'usuari que introdueixi dos nombres i mostra un missatge
 # que indiqui quin és més gran o si són iguals.
+num1, num2 = map(float, input("Introdueix dos noms: ").split(", "))
+if num1 == num2:
+    print("Els dos nombres son iguals")
+elif num1>num2:
+    print(f"{num1} és més gran que {num2}")
+else:
+    print(f"{num2} és més gran que {num1}")
 
 # Exercici 2: Calculadora senzilla
 # Demana a l'usuari dos nombres i una operació (+, -, *, /).
 # Fes l'operació i mostra'n el resultat (gestiona la divisió per zero).
+num1, num2 = map(float, input("Introdueix dos noms: ").split(", "))
+operacion = input("Introdueix una operació (+,-,*,/):")
+
+if operacion == "+":
+    num3 = num1 + num2
+elif operacion == "-":
+    num3 = num1 - num2
+elif operacion == "*":
+    num3 = num1 * num2
+elif operacion == "/":
+    if num2==0:
+        print("No es pot dividir per 0")
+    else:
+        num3 = num1 / num2
+print(f"El resultat és {num3}")    
 
 # Exercici 3: Any de traspàs
 # Demana a l'usuari que introdueixi un any i determina si és de traspàs.
 # Un any és de traspàs si és divisible per 4, excepte si és divisible per 100
 # però no per 400.
-
+any = int(input("Introdueix un any: "))
+if((any % 4  == 0 and any % 100 != 100) or any % 400 == 0):
+     print(f"L'any {any} és de traspàs")
+else:
+     print(f"L'any {any} no és de traspàs")
 # Exercici 4: Classificar edats
 # Demana a l'usuari que introdueixi una edat i classifica-la en:
 # - Nadó (0-2 anys)
@@ -22,24 +48,56 @@
 # - Adolescent (13-17 anys)
 # - Adult (18-64 anys)
 # - Persona gran (65 anys o més)
-
+edat = int(input("Introdueix una edat: "))
+if(edat >= 0 and edat <= 2):
+    print(f"L'edat de {edat}, correspon a un nadó.")
+elif(edat >= 3 and edat <= 12):
+    print(f"L'edat de {edat}, correspon a un infant.")
+elif(edat >= 13 and edat <= 17):
+    print(f"L'edat de {edat}, correspon a un adolescent.")
+elif(edat >= 18 and edat <= 64):
+    print(f"L'edat de {edat}, correspon a un adult.")
+elif(edat >= 65):
+    print(f"L'edat de {edat}, correspon a una persona gran.")
+else:
+    print(f"L'edat {edat} no és vàlida.")
 # Exercici 5: Qualitat del senyal Wi-Fi
 # Demana el nivell de senyal rebut (RSSI) en dBm i classifica la cobertura:
 # - -50 dBm o superior: excel·lent
 # - Entre -67 dBm i menys de -50 dBm: bona
 # - Entre -75 dBm i menys de -67 dBm: feble
 # - Inferior a -75 dBm: molt feble
-
+nivell_senyal = float(input("Introdueix el nivell del senyal rebut (dbm): "))
+if(nivell_senyal >= -50):
+    print("La senyal és excel·lent.")
+elif(nivell_senyal >= -67 and nivell_senyal < 50):
+    print("La senyal és bona.")
+elif(nivell_senyal >= -75 and nivell_senyal < -67):
+    print("La senyal és feble.")
+elif(nivell_senyal <= -75):
+    print("La senyal és molt feble.")
+else:
+    print("S'ha introduït un valor invàlid")
 # Exercici 6: Nivell de recepció d'una connexió de fibra òptica
 # Demana la potència òptica rebuda en dBm. Per a aquest exercici, considera
 # acceptable un nivell entre -27 dBm i -8 dBm, ambdós inclosos.
 # Indica si el nivell és massa baix, acceptable o massa alt.
-
+nivell_reparacio = float(input("Introdueix la potència rebuda (dbm): "))
+if(nivell_reparacio >= -27 and nivell_reparacio <= -8):
+    print("El nivell és acceptable.")
+elif(nivell_reparacio < -27):
+    print("El nivell és massa baix.")
+else:
+    print("El nivell és massa alt.")
 # Exercici 7: Consum mensual de dades mòbils
 # Demana el consum de dades en GB d'una línia mòbil. El pla inclou 20 GB.
 # Indica si el consum és dins del límit o si l'ha superat; en aquest últim cas,
 # calcula quants GB addicionals s'han consumit.
-
+consum = float(input("Introdueix el consum de dades (GB): "))
+if(consum > 20):
+    print(f"El consum ha superat el pla per {consum-20} GB")
+else:
+    print("El consum està fins del límit: ")
 # Exercici 8: Diagnòstic d'una connexió de fibra
 # Demana si l'indicador LOS del terminal òptic està encès i si l'indicador
 # d'Internet del router està encès. Segons aquestes dues dades, indica si cal

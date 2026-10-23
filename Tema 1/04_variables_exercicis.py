@@ -14,8 +14,8 @@ print(f"El nom de l'encaminador és {nom}, està ubicat a {ubicacio}, té {ports
 # i els GB consumits. Calcula quants GB queden i mostra el resultat.
 # Després, actualitza el consum amb un valor nou i torna a calcular
 # quants GB queden.
-GB_pla_de_dades, GB_consumits = map(float, input("Introdueix els GB d'un pla de dades i els GB compartits:").split(", "))
+GB_pla_de_dades, GB_consumits = map(float, input("Introdueix els GB d'un pla de dades i els GB compartits: ").split(", "))
 
 print(f"Queden {GB_pla_de_dades-GB_consumits}")
-GB_consumits = float(input("Actualitza el consum amb un valor nou"))
+GB_consumits = float(input("Actualitza el consum amb un valor nou: "))
 print(f"Queden {GB_pla_de_dades-GB_consumits}")
