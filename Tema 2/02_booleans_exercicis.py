@@ -8,6 +8,14 @@
 # nombre_b = 5
 # Mostra el resultat de comparar si nombre_a és més gran, més petit o igual
 # que nombre_b.
+nombre_a, nombre_b = 8, 5
+
+if nombre_a > nombre_b:
+    print(f"{nombre_a} és més gran que {nombre_b}.")
+elif nombre_a < nombre_b:
+    print(f"{nombre_a} és més petit que {nombre_b}.")
+else:
+    print(f"{nombre_a} és igual que {nombre_b}.")
 
 # Exercici 2: Comparar cadenes de text
 # Donades les cadenes:
@@ -15,7 +23,12 @@
 # paraula_b = "hola"
 # Mostra si són iguals i si paraula_a és igual a "Hola".
 # Observa si Python distingeix entre majúscules i minúscules.
+paraula_a, paraula_b = "Hola", "hola"
 
+if(nombre_a == nombre_b):
+    print("Són iguals.")
+else:
+    print("No són iguals.")
 # Exercici 3: Connexió de xarxa
 # Donats els valors booleans:
 # router_encès = True
