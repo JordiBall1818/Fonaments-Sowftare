@@ -61,7 +61,7 @@ print("3. Haz la división entera entre el número que te salió y el número 2"
 print("4. El resultado debería ser 1")
 
 PI=3.14
-print((round(PI))/2)
+print((round(PI))//2)
 print("--------------")
 
 print("\nEjercicio 6: Conversor de temperatura")
@@ -70,7 +70,7 @@ print("Convierte ese valor a Fahrenheit con la fórmula: F = (C * 9/5) + 32")
 print("Muestra ambos valores con un mensaje claro.")
 
 ### Completa aquí
-tempC = float(input("Introdueix una temperatura en Celsius"))
+tempC = float(input("Introdueix una temperatura en Celsius: "))
 tempF = (tempC * 9/5) + 32
 print(f"La temperatura en Celsius és de {tempC} graus i en Farenheit de {tempF}.")
 print("--------------")
@@ -81,7 +81,12 @@ print("Calcula cuánto es la propina y el total final a pagar.")
 print("Muestra los resultados con 2 decimales.")
 
 ### Completa aquí
-
+cuenta_str, propina_str = input("Introduce el total de la cuenta y el porcentaje de propina (separa con , y espacio): ").split(", ")
+cuenta = float(cuenta_str)
+porcentaje = float(propina_str)
+total = cuenta + (porcentaje/100)*cuenta 
+propina_fin = (porcentaje/100)*cuenta
+print(f"La propina és de {propina_fin} euros y el total és de {total}")
 
 print("--------------")
 
