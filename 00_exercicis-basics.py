@@ -96,3 +96,8 @@ print("Comprueba si tiene al menos 8 caracteres.")
 print("Muestra 'Contraseña válida' o 'Contraseña no válida'.")
 
 ### Completa aquí
+contraseña = input("Introduce una contraseña que tenga al menos 8 caracteres: ")
+if len(contraseña) >= 8:
+    print("Contraseña válida")
+else:
+    print("Contraseña inválida")
