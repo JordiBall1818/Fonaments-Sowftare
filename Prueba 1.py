@@ -1,6 +1,4 @@
-taula = int(input("Introdueix un número: "))
-multiplicador = 1
-while multiplicador <= 10:
-  resultat = taula * multiplicador
-  print(f"{taula} x {multiplicador} = {resultat}")
-  multiplicador += 1
+nombres = [1, 2, 3]
+nombres.append(4)
+nombres.insert(1, 9)
+print(nombres)
