@@ -4,7 +4,9 @@
 
 # Exercici 1: Imprimir números parells
 # Imprimeix tots els números parells del 2 al 20 (inclosos) fent servir un bucle for.
-print("Hola")
+
+for numero in range(2, 21, 2):  # range(inicio, fin, paso)
+  print(numero)
 
 # Exercici 2: Calcular la mitjana d'una llista
 # Donada la llista de números següent:
